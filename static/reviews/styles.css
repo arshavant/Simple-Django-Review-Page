@@ -1,0 +1,512 @@
+/* Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-control {
+    margin-bottom: 15px;
+}
+
+.form-control label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-control input,
+.form-control textarea,
+.form-control select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+.form-control input:focus,
+.form-control textarea:focus,
+.form-control select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Error Styles */
+.errors input,
+.errors textarea,
+.errors select {
+    border-color: #ff4d4d;
+}
+
+.errors label {
+    color: #ff4d4d;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    form {
+        padding: 15px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+form {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Additional Styles */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    background-color: #f9f9f9;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="password"]:hover,
+textarea:hover {
+    background-color: #e9e9e9;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+    background-color: #fff;
+}
+
+button:active {
+    background-color: #004080;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Placeholder Styles */
+::placeholder {
+    color: #999;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: #999;
+}
+
+::-ms-input-placeholder {
+    color: #999;
+}
+
+/* Form Transitions */
+.form-control input,
+.form-control textarea,
+.form-control select {
+    transition: all 0.3s ease;
+}
+
+button {
+    transition: all 0.3s ease;
+}
+
+/* Form Shadows */
+.form-control input:focus,
+.form-control textarea:focus,
+.form-control select:focus {
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+button:hover {
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+/* Form Spacing */
+.form-control {
+    margin-bottom: 20px;
+}
+
+button {
+    margin-top: 10px;
+}
+
+/* Form Borders */
+.form-control input,
+.form-control textarea,
+.form-control select {
+    border: 2px solid #ccc;
+}
+
+button {
+    border: 2px solid #007bff;
+}
+
+/* Form Backgrounds */
+.form-control input,
+.form-control textarea,
+.form-control select {
+    background-color: #f4f4f9;
+}
+
+button {
+    background-color: #007bff;
+}
+
+/* Form Text Colors */
+.form-control input,
+.form-control textarea,
+.form-control select {
+    color: #333;
+}
+
+button {
+    color: #fff;
+}
+
+/* Form Font Sizes */
+.form-control input,
+.form-control textarea,
+.form-control select {
+    font-size: 16px;
+}
+
+button {
+    font-size: 16px;
+}
+
+/* Form Font Weights */
+.form-control input,
+.form-control textarea,
+.form-control select {
+    font-weight: 400;
+}
+
+button {
+    font-weight: 600;
+}
+
+/* Form Line Heights */
+.form-control input,
+.form-control textarea,
+.form-control select {
+    line-height: 1.5;
+}
+
+button {
+    line-height: 1.5;
+}
+
+/* Form Letter Spacing */
+.form-control input,
+.form-control textarea,
+.form-control select {
+    letter-spacing: 0.5px;
+}
+
+button {
+    letter-spacing: 0.5px;
+}
+
+/* Form Text Alignments */
+.form-control input,
+.form-control textarea,
+.form-control select {
+    text-align: left;
+}
+
+button {
+    text-align: center;
+}
+
+/* Form Text Transforms */
+.form-control input,
+.form-control textarea,
+.form-control select {
+    text-transform: none;
+}
+
+button {
+    text-transform: uppercase;
+}
+
+/* Form Text Decorations */
+.form-control input,
+.form-control textarea,
+.form-control select {
+    text-decoration: none;
+}
+
+button {
+    text-decoration: none;
+}
+
+/* Form Opacities */
+.form-control input,
+.form-control textarea,
+.form-control select {
+    opacity: 1;
+}
+
+button {
+    opacity: 1;
+}
+
+/* Form Z-Indexes */
+.form-control input,
+.form-control textarea,
+.form-control select {
+    z-index: 1;
+}
+
+button {
+    z-index: 1;
+}
+
+/* Form Display Properties */
+.form-control input,
+.form-control textarea,
+.form-control select {
+    display: block;
+}
+
+button {
+    display: inline-block;
+}
+
+/* Form Positions */
+.form-control input,
+.form-control textarea,
+.form-control select {
+    position: relative;
+}
+
+button {
+    position: relative;
+}
+
+/* Form Floats */
+.form-control input,
+.form-control textarea,
+.form-control select {
+    float: none;
+}
+
+button {
+    float: none;
+}
+
+/* Form Clearfix */
+.form-control::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Form Visibility */
+.form-control input,
+.form-control textarea,
+.form-control select {
+    visibility: visible;
+}
+
+button {
+    visibility: visible;
+}
+
+/* Form Overflow */
+.form-control input,
+.form-control textarea,
+.form-control select {
+    overflow: visible;
+}
+
+button {
+    overflow: visible;
+}
+
+/* Form Cursor */
+.form-control input,
+.form-control textarea,
+.form-control select {
+    cursor: text;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Form User Select */
+.form-control input,
+.form-control textarea,
+.form-control select {
+    user-select: text;
+}
+
+button {
+    user-select: none;
+}
+
+/* Form Pointer Events */
+.form-control input,
+.form-control textarea,
+.form-control select {
+    pointer-events: auto;
+}
+
+button {
+    pointer-events: auto;
+}
+
+/* Form Resize */
+.form-control textarea {
+    resize: vertical;
+}
+
+/* Form Appearance */
+.form-control input,
+.form-control textarea,
+.form-control select {
+    appearance: none;
+}
+
+button {
+    appearance: none;
+}
+
+/* Form Outline */
+.form-control input,
+.form-control textarea,
+.form-control select {
+    outline: none;
+}
+
+button {
+    outline: none;
+}
+
+/* Form Border Radius */
+.form-control input,
+.form-control textarea,
+.form-control select {
+    border-radius: 4px;
+}
+
+button {
+    border-radius: 4px;
+}
+
+/* Form Box Shadows */
+.form-control input,
+.form-control textarea,
+.form-control select {
+    box-shadow: none;
+}
+
+button {
+    box-shadow: none;
+}
+
+/* Form Transitions */
+.form-control input,
+.form-control textarea,
+.form-control select {
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+button {
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Form Animations */
+@keyframes buttonHover {
+    from {
+        background-color: #007bff;
+    }
+    to {
+        background-color: #0056b3;
+    }
+}
+
+button:hover {
+    animation: buttonHover 0.3s ease-in-out;
+}
+
+/* Form Media Queries */
+@media (max-width: 768px) {
+    form {
+        padding: 15px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    form {
+        padding: 10px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+ 
